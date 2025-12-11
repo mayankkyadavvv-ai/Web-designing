@@ -1,0 +1,1 @@
+[{"appName":"Instagram","appPackage":"com.instagram.android","appVersion":"399.0.0.51.85"},{"appName":"Battlegrounds India","appPackage":"com.pubg.imobile","appVersion":"4.0.0"},{"appName":"GTA: CTW","appPackage":"com.rockstargames.gtactw","appVersion":"4.4.221"},{"appName":"PPCine","appPackage":"com.cs.cinemain","appVersion":"V2.0.4"}]
