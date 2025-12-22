@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid</title>
+  </head>
+  <body style="margin:0; background:#f3f4f6; font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial;">
+   
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1r 1fr 1fr;
+        grid-template-rows: 80px 1fr 60px;
+        grid-template-areas:
+          'header header header'
+          'main empty sidebar'
+          'footer footer footer';
+        gap: 12px;
+        max-width: 1000px;
+        height: 80vh;
+        margin: 24px auto;
+        padding: 12px;
+        box-sizing: border-box;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      "
+    >
+      
+      <div
+        style="
+          grid-area: header;
+          background: #f59e0b; /* orange */
+          color: #111827;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          border-radius: 8px;
+        "
+      >
+        header
+      </div>
+
+     
+      <div
+        style="
+          grid-area: main;
+          background: #3b82f6; /* blue */
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          font-weight: 600;
+        "
+      >
+        main
+      </div>
+
+     
+      <div
+        style="
+          grid-area: empty;
+          background: #ffffff; /* white */
+          color: #374151;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          border: 2px dashed #d1d5db;
+          font-weight: 600;
+        "
+      >
+        empty
+      </div>
+
+      
+      <div
+        style="
+          grid-area: sidebar;
+          background: #ef4444; /* red */
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          font-weight: 600;
+        "
+      >
+        sidebar
+      </div>
+
+      <div
+        style="
+          grid-area: footer;
+          background: #10b981; /* green */
+          color: #062e26;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          font-weight: 600;
+        ""
+      >
+        footer
+      </div>
+    </div>
+  </body>
+</html>
