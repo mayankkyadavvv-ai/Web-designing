@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allu&Co - Vacation (Beginner Version)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef4ff; 
+            margin: 0;
+            padding: 20px; }
+        .main-container {
+            width: 1000px;
+            background-color: white;
+            margin: 0 auto; 
+            padding: 40px;
+            border-radius: 20px;  }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 20px; }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            text-decoration: none; 
+            color: #555;
+            margin-left: 20px;
+            font-weight: bold; }
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 60px; low */
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;out stretching */
+        }
+        .hero-text {
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            color: white;
+            text-shadow: 1px 1px 4px black; 
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .search-box {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            right: 40px;
+            height: 80px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex; /* Row layout */
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1); /* Simple shadow */
+        }
+
+        .search-item {
+            flex: 1; /* Each item takes equal space */
+            padding: 10px;
+            border-right: 1px solid #ddd; /* Grey line between items */
+        }
+
+        .search-item:last-child {
+            border-right: none;
+            flex: 0.5;
+        }
+
+        .search-item label {
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .search-item input {
+            border: none;
+            width: 100%;
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .search-btn {
+            background-color: #111;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .hotels-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .hotel-card {
+            width: 30%; 
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 15px;
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .location-text {
+            color: gray;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main-container">
+<div class="header">
+<div class="logo"> TRAVELFREE</div>
+<div class="nav-links">
+ <a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">Contact Us</a>
+ </div>
+</div>
+<div class="hero-section">
+<img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1200" class="hero-img">
+            
+ <div class="hero-text">
+  <h1>Enjoy your Dream Vacation</h1>
+ <p>Book Hotels, Flights and Stay packages at lowest price</p>
+ </div>
+<div class="search-box">
+<div class="search-item">
+ <label>Location</label>
+<input type="text" placeholder="Where are you going?">
+</div>            
+</div>
+<div class="search-box">
+<div class="search-item">
+ <label>Check in</label>
+ <input type="date">
+ </div>
+<div class="search-item">
+ <label>Check out</label>
+ <input type="date">
+ </div>
+<div class="search-item">
+ <label>Check out</label>
+ <input type="date">
+</div>
+<div class="search-item">
+<label>Guests</label>
+ <input type="number" placeholder="Add guests">
+</div>
+<div class="search-item">
+<button class="search-btn">&#128269;</button> 
+ </div>
+ </div>
+</div>
+ <h2 class="section-title">Popular Hotels</h2> 
+<div class="hotels-row">
+<div class="hotel-card">
+<img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img">
+<div class="card-info">
+ <div class="card-top">
+<span>Taj Hotel</span>
+<span>55000</span>
+</div>
+ <div class="location-text">New Delhi</div>
+ </div>
+</div>
+<div class="hotel-card">
+<img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img">
+<div class="card-info">
+ <div class="card-top">
+ <span>Raddison</span>
+<span>15000</span>
+</div>
+ <div class="location-text">Ghaziabad</div>
+</div>
+</div>  
+ <div class="hotel-card">
+<img src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img">
+<div class="card-info">
+ <div class="card-top">
+<span>Oberoi Resorts</span>
+  <span>8000</span>
+</div>
+ <div class="location-text">Agra,uttarpradesh</div>
+ </div>
+ </div>
+ </div>
+ </div>
+</body>
+</html>
